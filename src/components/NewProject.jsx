@@ -11,6 +11,13 @@ const NewProject = ({onAdd}) => {
         const enteredDescription = description.current.value;
         const enteredDate = date.current.value;
 
+        if (enteredTitle.trim() === '' ||
+            enteredDescription.trim() === '' ||
+            enteredDate.trim() === ''
+        ) {
+            
+        }
+
         onAdd({
             title: enteredTitle,
             description: enteredDescription,
